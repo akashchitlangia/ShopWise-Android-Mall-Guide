@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/scrollView1"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:background="@color/white"
+           android:scrollbars="none"
+       >
+
+
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:focusableInTouchMode="true"
+    
+    >
+  
+    
+   <!--   <TextView
+        android:id="@+id/txtLabel"
+        android:layout_below="@+id/view_pager"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="16dp"
+        android:text="Home View"/>
+    
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLabel"
+        android:src="@drawable/icon_hom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+     -->
+
+    <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/linearView"
+        android:paddingTop="5dp" >
+    </cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager>
+
+    <LinearLayout
+        android:id="@+id/linearView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+       
+        android:background="@drawable/border"
+     
+        android:orientation="horizontal" >
+
+        <AutoCompleteTextView
+            android:id="@+id/search_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.44"
+            android:background="@drawable/transparent"
+           android:drawablePadding="10dp"
+           android:paddingLeft="5dp"
+            android:drawableLeft="@drawable/icon_search_black"
+            android:padding="7dp"
+            
+            android:ems="6"
+            android:hint="Search by Brand"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </AutoCompleteTextView>
+
+        <ImageButton
+            android:id="@+id/speakButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.09"
+            
+            android:background="@drawable/transparent"
+            android:focusable="true"
+            android:src="@drawable/icon_mic_white" />
+        <!--     android:onClick="speakButtonClicked" -->
+
+    </LinearLayout>
+    
+     <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/category"
+            
+            android:orientation="vertical"
+            android:layout_below="@+id/view_pager"
+            android:layout_margin="10dp" >
+    
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search by Category"
+                android:layout_marginBottom="3dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" 
+              />
+               <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                
+                android:background="@color/list_divider" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_pager"
+        android:layout_centerHorizontal="true"
+          android:scrollbars="none"
+       >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp" >
+            
+
+            <ImageButton
+                android:id="@+id/button_mens"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/icon_border"
+                android:src="@drawable/icon_mens" 
+                />
+
+            <ImageButton
+                android:id="@+id/button_women"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/icon_border"
+                android:src="@drawable/icon_women"
+                android:onClick="helpB" />
+
+            <ImageButton
+                android:id="@+id/button_kids"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                 android:layout_marginLeft="5dp"
+                android:src="@drawable/icon_kids" 
+                
+                android:background="@drawable/icon_border"/>
+
+            <ImageButton
+                android:id="@+id/button_footware"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/icon_footware"
+                 android:layout_marginLeft="5dp"
+                  
+                android:background="@drawable/icon_border" />
+            <ImageButton
+                android:id="@+id/button_dining"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/icon_dining" 
+                 android:layout_marginLeft="5dp"
+                 
+                android:background="@drawable/icon_border"/>
+            <ImageButton
+                android:id="@+id/button_acce"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/acce_100" 
+                 android:layout_marginLeft="5dp"
+                  
+                android:background="@drawable/icon_border"/>
+            
+             <ImageButton
+                android:id="@+id/button_sports"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/icon_sports" 
+                 android:layout_marginLeft="5dp"
+                 
+                android:background="@drawable/icon_border"/>
+              <ImageButton
+                android:id="@+id/button_enter"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/enter_100" 
+                 android:layout_marginLeft="5dp"
+                 
+                android:background="@drawable/icon_border"/>
+              
+              <ImageButton
+                android:id="@+id/button_elec"
+                 android:layout_marginLeft="5dp"
+                 android:layout_width="100dp"
+                android:layout_height="100dp"
+                
+                android:src="@drawable/elec_100"
+                android:background="@drawable/icon_border" />
+              
+               <ImageButton
+                android:id="@+id/button_department"
+                 android:layout_marginLeft="5dp"
+                 android:layout_width="100dp"
+                android:layout_height="100dp"
+                 
+                android:src="@drawable/icon_dept"
+                android:background="@drawable/icon_border" />
+                <ImageButton
+                android:id="@+id/button_spa"
+                 android:layout_marginLeft="5dp"
+                 android:layout_width="100dp"
+                android:layout_height="100dp"
+                 
+                android:src="@drawable/icon_spa"
+                android:background="@drawable/icon_border" />
+                 <ImageButton
+                android:id="@+id/button_salon"
+                 android:layout_marginLeft="5dp"
+                 android:layout_width="100dp"
+                android:layout_height="100dp"
+                
+                android:src="@drawable/icon_salon"
+                android:background="@drawable/icon_border" />
+                 
+                  <ImageButton
+                android:id="@+id/button_health"
+                 android:layout_marginLeft="5dp"
+                 android:layout_width="100dp"
+                android:layout_height="100dp"
+                 
+                android:src="@drawable/icon_health"
+                android:background="@drawable/icon_border" />
+                   <ImageButton
+                android:id="@+id/button_other"
+                 android:layout_marginLeft="5dp"
+                 android:layout_width="100dp"
+                android:layout_height="100dp"
+                
+                android:src="@drawable/icon_other"
+                android:background="@drawable/icon_border" />
+                    <ImageButton
+                android:id="@+id/button_bar"
+                 android:layout_marginLeft="5dp"
+                 android:layout_width="100dp"
+                android:layout_height="100dp"
+                
+                android:src="@drawable/icon_bar"
+                android:background="@drawable/icon_border" />
+            
+            
+            
+        </LinearLayout>
+    </HorizontalScrollView>
+    
+    </LinearLayout>
+    
+     <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/category"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" 
+            android:layout_marginBottom="10dp">
+    
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search by Mall"
+                android:layout_marginBottom="3dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" 
+              />
+               <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/list_divider" />
+  
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_pager"
+        android:layout_centerHorizontal="true"
+          android:scrollbars="none"
+       >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            
+            android:layout_marginTop="5dp" >
+
+
+            <ImageButton
+                android:id="@+id/imageButton11"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                
+                android:src="@drawable/ti" 
+                android:background="@drawable/icon_border"/>
+
+            <ImageButton
+                android:layout_marginLeft="5dp"
+                android:id="@+id/imageButton22"
+               android:layout_width="100dp"
+                android:layout_height="100dp"
+                
+                android:src="@drawable/icon_malhar" 
+                android:background="@drawable/icon_border"/>
+
+            <ImageButton
+                android:id="@+id/imageButton33"
+                 android:layout_marginLeft="5dp"
+                  android:layout_width="100dp"
+                android:layout_height="100dp"
+               
+               
+                 android:background="@drawable/icon_border"
+                android:src="@drawable/mangal" />
+
+            <ImageButton
+                android:id="@+id/imageButton44"
+                 android:layout_marginLeft="5dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+               
+               
+                 android:background="@drawable/icon_border"
+               
+                android:src="@drawable/c21" />
+            <ImageButton
+                android:id="@+id/imageButton55"
+                 android:layout_marginLeft="5dp"
+                  android:layout_width="100dp"
+                android:layout_height="100dp"
+               
+               
+                 android:background="@drawable/icon_border"
+               
+                android:src="@drawable/central" />
+           
+            
+            
+        </LinearLayout>
+    </HorizontalScrollView>
+    
+    </LinearLayout>
+
+    
+</RelativeLayout>
+</ScrollView>

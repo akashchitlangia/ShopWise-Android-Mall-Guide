@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+   
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        >
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/line"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+           
+           >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ti" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageView1"
+                android:layout_marginTop="10dp"
+                android:text="Treasure Island"
+                
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_alignRight="@+id/textView1"
+                android:layout_below="@+id/textView1"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="AB Road Indore"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <RatingBar
+                android:id="@+id/ratingBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView1"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_marginTop="10dp"
+                android:scaleX="2"
+                android:scaleY="2"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratingBar1"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_border"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                  android:layout_marginRight="15dp"
+                android:text="More Info" />
+
+        </RelativeLayout>
+
+       <!--     <RelativeLayout
+            android:layout_width="fill_parent"
+            android:id="@+id/layout3"
+            android:layout_height="150dp"
+            android:layout_below="@+id/layout2"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp" 
+             android:padding="5dp">
+
+                <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                 />
+              <TextView
+                android:id="@+id/text_central"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                android:layout_below="@+id/imageView1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <RatingBar
+                android:id="@+id/ratingBar3"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/text_central"
+                android:layout_below="@+id/text_central" />
+           
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/imageView1"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="More Info"
+                 android:background="@drawable/button_border"
+                android:layout_below="@+id/imageView1" />
+
+        </RelativeLayout>
+  -->
+
+
+<View
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"
+           android:layout_centerInParent="true"
+            android:background="@color/list_divider" />
+
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/line"
+            android:layout_centerHorizontal="true"
+             android:layout_margin="5dp"
+          >
+        
+            
+            
+            
+     
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ti" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageView2"
+                android:layout_marginTop="10dp"
+                android:text="Treasure Island"
+                
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignRight="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="AB Road Indore"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <RatingBar
+                android:id="@+id/ratingBar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView2"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_marginTop="10dp"
+                android:scaleX="2"
+                android:scaleY="2"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratingBar2"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_border"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                  android:layout_marginRight="15dp"
+                android:text="More Info" />
+            
+            
+            
+            
+            
+            </RelativeLayout>
+        </RelativeLayout>
+</LinearLayout>
