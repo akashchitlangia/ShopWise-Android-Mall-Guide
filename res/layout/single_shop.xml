@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:background="@color/white"
+    android:padding="5dp"
+    android:scrollbars="none"
+   >
+
+    <RelativeLayout
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:background="@color/white">
+       
+
+        <!--
+                 <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp"
+                android:background="@drawable/post_border_style"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/box"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/list_onclick"
+                    android:orientation="vertical">
+        -->
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/s_mall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/floor_image"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/s_name"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Mall Name"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+            <TextView
+                android:id="@+id/s_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/s_mall"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/s_image"
+                android:gravity="center"
+                android:text="Shop Name"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/floor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/text"
+                android:layout_alignBottom="@+id/text"
+                android:layout_toLeftOf="@+id/text_shop_no"
+                android:layout_toRightOf="@+id/text"
+                android:text="G" />
+            <!-- android:paddingLeft="5dp" -->
+
+            <ImageView
+                android:id="@+id/floor_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/text"
+                android:layout_toRightOf="@+id/s_image"
+                android:paddingLeft="4dp"
+            
+                android:src="@drawable/floorsicon" />
+
+            <TextView
+                android:id="@+id/s_shop_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/floor"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/text_shop_no"
+                android:text="55" />
+
+            <TextView
+                android:id="@+id/text_shop_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/s_shop_no"
+                android:layout_alignBottom="@+id/s_shop_no"
+                android:layout_toLeftOf="@+id/offer"
+                android:paddingLeft="5dp"
+                android:text="Shop no. :" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ratingBar1"
+                android:layout_toRightOf="@+id/floor_image"
+                android:paddingLeft="2dp"
+                android:text="Floor-Level:" />
+            
+            
+             <View
+    android:layout_width="fill_parent"
+    android:layout_below="@+id/ratingBar1"
+    android:id="@+id/line"
+    android:layout_height="1dp"
+    android:layout_marginTop="10dp"
+    
+    android:background="@color/list_divider"/>
+            
+
+            <LinearLayout
+                android:id="@+id/linear_desc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/floor_image"
+                android:layout_margin="5dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/box"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/floor_image"
+                    android:layout_margin="5dp"
+                   
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/button2"
+                        android:background="@drawable/button_border"
+                        android:text="What&apos;s new"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/button_border"
+                        android:text="Map"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/button2"
+                        android:background="@drawable/button_border"
+                        android:text="Offers"
+                        android:textColor="@color/white" />
+
+                    <!--
+                         <ScrollView
+                        android:id="@+id/scrollView2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="120dp"
+                        android:layout_below="@+id/button2"
+                        android:layout_centerHorizontal="true" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" >
+                    -->
+
+                    <TextView
+                        android:id="@+id/s_desc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/button1"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/border"
+                        android:padding="8dp"
+                        android:text="Desc"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!--
+                    </LinearLayout>
+                    </ScrollView>
+                    -->
+
+                    <Button
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:id="@+id/btn_post_review"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/s_desc"
+                        android:background="@drawable/button_border"
+                        android:onClick="postReview"
+                        android:text="Post Review"
+                        android:textColor="@color/white" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="68dip"
+                        android:layout_height="75dip"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/btn_post_review"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/transparent"
+                        android:src="@drawable/icon_mail_new" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton3"
+                        android:layout_width="68dip"
+                        android:layout_height="75dip"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/imageButton2"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/transparent"
+                        android:src="@drawable/icon_fb" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton1"
+                        android:layout_width="68dip"
+                        android:layout_height="75dip"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignTop="@+id/imageButton2"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/transparent"
+                        android:src="@drawable/icon_call" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/box2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_desc"
+                android:layout_margin="2dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/text_offer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="Offers:"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/s_offer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <ImageButton
+                    android:id="@+id/offer_button"
+                    android:layout_width="45dip"
+                    android:layout_height="45dip"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@+id/s_offer"
+                    android:background="@drawable/transparent"
+                    android:src="@drawable/tag" />
+            </RelativeLayout>
+            
+            <RatingBar
+                android:id="@+id/ratingBar1"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/linear_desc"
+                android:layout_below="@+id/s_image"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:numStars="5" />
+
+            <ImageView
+                android:id="@+id/s_image"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_launcher" />
+
+            <ImageView
+                android:id="@+id/offer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/s_name"
+                
+                android:src="@drawable/tag" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

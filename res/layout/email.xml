@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:scrollbars="none" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_launcher" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Shop Wise"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Email"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/name_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_border"
+            android:editable="false"
+            android:ems="10"
+            android:hint="Name*"
+            android:nextFocusDown="@+id/email_r"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:textColor="@color/white" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/email_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_r"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_border"
+            android:editable="false"
+            android:ems="10"
+            android:hint="Your Email*"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email_r"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_border"
+            android:ems="10"
+            android:hint="Subject*"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subject"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_border"
+            android:ems="10"
+            android:hint="Message*"
+            android:inputType="textMultiLine"
+            android:nextFocusDown="@+id/email_r"
+            android:padding="12dp"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/mobile_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/message"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_border"
+            android:editable="false"
+            android:ems="10"
+            android:hint="Mobile*"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:textColor="@color/white" >
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mobile_r"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/transparent"
+            android:src="@drawable/icon_add"
+            android:text="Submit" />
+    </RelativeLayout>
+
+</ScrollView>

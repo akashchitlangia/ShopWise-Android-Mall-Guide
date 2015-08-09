@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative_search"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_margin="5dp"
+    tools:context=".MainActivity" >
+
+  
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+
+     <LinearLayout
+        android:id="@+id/linearView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+       
+        android:background="@drawable/border"
+     
+        android:orientation="horizontal" >
+
+        <AutoCompleteTextView
+            android:id="@+id/search_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.44"
+            android:background="@drawable/transparent"
+           android:drawablePadding="3dp"
+            android:drawableLeft="@drawable/icon_search_black"
+            android:padding="7dp"
+            android:ems="6"
+            android:hint="search"
+            android:singleLine="true"
+            android:textColor="@android:color/background_dark" >
+
+            <requestFocus />
+        </AutoCompleteTextView>
+
+        <ImageButton
+            android:id="@+id/speakButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.09"
+            
+            android:background="@drawable/transparent"
+            android:focusable="true"
+            android:onClick="speakButtonClicked"
+            android:src="@drawable/icon_mic_white" />
+
+    </LinearLayout>
+        <ListView
+             android:scrollbars="none"
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@color/list_divider"
+            android:dividerHeight="1dp" />
+
+        <!-- android:listSelector="@drawable/list_selector" -->
+    </LinearLayout>
+
+</RelativeLayout>
